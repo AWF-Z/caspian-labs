@@ -19,7 +19,7 @@ ALLOWED = {
     "TRADEMARK.md",
     "assets/casp-system-v2.svg",
     "assets/caspian-hero.svg",
-    "assets/wandr-field-v4.svg",
+    "assets/wandr-field-v5.svg",
     "docs/EVIDENCE.md",
     "docs/PRODUCT.md",
     "evidence/clinical-opportunity/result.json",
