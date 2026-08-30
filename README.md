@@ -59,7 +59,7 @@ or an endorsement by the benchmark authors or compared companies.
 ## One research engine, three configurations
 
 <p align="center">
-  <img src="assets/casp-system-v2.svg" alt="CASP Core, Overlay, and Enterprise are three configurations of one research engine" width="100%">
+  <img src="assets/casp-system-v3.svg" alt="CASP Core, Overlay, and Enterprise are three configurations of one research engine" width="100%">
 </p>
 
 | Configuration | How CASP is used |

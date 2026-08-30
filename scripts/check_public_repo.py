@@ -17,7 +17,7 @@ ALLOWED = {
     "README.md",
     "SECURITY.md",
     "TRADEMARK.md",
-    "assets/casp-system-v2.svg",
+    "assets/casp-system-v3.svg",
     "assets/caspian-hero.svg",
     "assets/wandr-field-v5.svg",
     "docs/EVIDENCE.md",
