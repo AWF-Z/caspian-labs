@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
   <title id="title">CASP compared with the complete published WANDR field</title>
   <desc id="desc">On the matched 45-task WANDR comparison, CASP led Perplexity, Anthropic, OpenAI, Exa, Parallel, and Gemini on soft and hard F1.</desc>
-  <rect x="0.5" y="0.5" width="1199" height="699" rx="16" fill="#ffffff" stroke="#e5e7eb"/>
+  <rect x="0.5" y="0.5" width="1199" height="629" rx="16" fill="#ffffff" stroke="#e5e7eb"/>
   <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
     <text x="48" y="52" fill="#6b7280" font-size="16" font-weight="700" letter-spacing="2.2">WANDR · MATCHED 45 TASKS</text>
     <text x="48" y="102" fill="#111111" font-size="36" font-weight="740" letter-spacing="-1">CASP vs. the published field</text>
@@ -78,8 +78,5 @@
       <text x="1152" y="37" text-anchor="end" fill="#9ca3af" font-size="16">45 / 45</text>
     </g>
 
-    <line x1="48" y1="642" x2="1152" y2="642" stroke="#e5e7eb"/>
-    <text x="48" y="674" fill="#4b5563" font-size="16">Published leader: Perplexity Search as Code</text>
-    <text x="1152" y="674" text-anchor="end" fill="#4b5563" font-size="16">Official evaluator</text>
   </g>
 </svg>
