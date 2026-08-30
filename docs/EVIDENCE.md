@@ -18,7 +18,9 @@ CASP produced 45 genuine official metric-bearing receipts on the matched
 | Tasks with genuine official scores | 45 | 44 for the published leader |
 
 The strongest published matched result was Perplexity Search as Code at xhigh.
-CASP was 30.5% higher on soft F1 and 2.20 times as high on hard F1.
+CASP was 30.5% higher on soft F1 and 120% higher on hard F1. The latter is the
+same result as 2.20 times the leader's hard F1, expressed as a relative increase
+for consistency.
 
 WANDR's soft measure captures research quality and coverage. Its hard measure
 requires the complete evidence structure for a candidate to be correct. CASP's
@@ -75,4 +77,3 @@ The result-bearing engine, task compilers, evaluator reconstruction, repair
 logic, full receipts, candidate outputs, ranking artifacts, private labels,
 datasets, and internal infrastructure are not public. Qualified diligence can
 inspect additional evidence under an appropriate confidential process.
-

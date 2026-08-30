@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import re
+import subprocess
 from pathlib import Path
 
 
@@ -24,6 +25,7 @@ ALLOWED = {
     "evidence/clinical-opportunity/result.json",
     "evidence/wandr-s45/result.json",
     "scripts/check_public_repo.py",
+    "scripts/LICENSE",
 }
 
 BLOCKED = {
@@ -35,6 +37,11 @@ BLOCKED = {
     "triage_" + "replay.jsonl": "private evaluator receipt",
     "canon_" + "replay.jsonl": "private evaluator receipt",
     "CASP_RUN_" + "CONTRACT": "private run contract",
+    "CASP_5_0_" + "ARCHITECTURE.md": "private architecture specification",
+    "CASP_5_0_" + "PROVENANCE.json": "private provenance record",
+    "CASP_5_0_ENGINE_" + "REGISTRY.json": "private engine registry",
+    "PRESERVED_" + "TASKS.json": "private preservation record",
+    "SEALED_DO_" + "NOT_RERUN": "private sealed-run marker",
 }
 
 SECRET_ASSIGNMENT = re.compile(
@@ -51,6 +58,14 @@ def public_files() -> set[str]:
             continue
         found.add(path.relative_to(ROOT).as_posix())
     return found
+
+
+def scan_body(body: str, location: str, failures: list[str]) -> None:
+    for text, reason in BLOCKED.items():
+        if text in body:
+            failures.append(f"{reason} in {location}")
+    if SECRET_ASSIGNMENT.search(body) or PRIVATE_KEY.search(body):
+        failures.append(f"secret-shaped content in {location}")
 
 
 def main() -> None:
@@ -77,11 +92,20 @@ def main() -> None:
         except UnicodeDecodeError:
             failures.append(f"binary file forbidden: {rel}")
             continue
-        for text, reason in BLOCKED.items():
-            if text in body:
-                failures.append(f"{reason} in {rel}")
-        if SECRET_ASSIGNMENT.search(body) or PRIVATE_KEY.search(body):
-            failures.append(f"secret-shaped content in {rel}")
+        scan_body(body, rel, failures)
+
+    try:
+        history = subprocess.run(
+            ["git", "log", "--all", "--format=", "--patch"],
+            cwd=ROOT,
+            check=True,
+            capture_output=True,
+            text=True,
+        ).stdout
+    except subprocess.CalledProcessError as exc:
+        failures.append(f"unable to scan git history: {exc}")
+    else:
+        scan_body(history, "git history", failures)
 
     wandr = json.loads((ROOT / "evidence/wandr-s45/result.json").read_text())
     if wandr.get("task_count") != 45:

@@ -30,10 +30,10 @@ directions, completes the evidence needed to judge them, and concentrates a
 team's limited attention on the strongest next move. It then records the
 decision and what happened.
 
-## A solo-built system surpassed the published production field
+## An independently built system surpassed the published production field
 
-Built by one founder, CASP surpassed every published production research system
-on the matched 45-task WANDR comparison. The field included systems from
+Developed independently, CASP surpassed every published production research
+system on the matched 45-task WANDR comparison. The field included systems from
 Perplexity, Anthropic, OpenAI, Gemini, Exa, and Parallel.
 
 WANDR does not reward one polished answer. Its wide-and-deep tasks require a
@@ -46,7 +46,7 @@ the required records with evidence the evaluator independently checks.
 
 CASP scored **0.583 soft F1** and **0.493 hard F1** under the official evaluator.
 That was **30.5% higher** than the published leader on research quality and
-coverage and **2.20 times as high** on strict completion. CASP produced genuine
+coverage and **120% higher** on strict completion. CASP produced genuine
 official scores on all 45 matched tasks, with no infrastructure zero-fills, and
 reached **0.917 aggregate soft precision**.
 
@@ -111,7 +111,8 @@ It does **not** contain CASP's proprietary runtime, task compilers, search and
 ranking implementation, evaluator reconstruction, repair system, private
 receipts, datasets, customer material, or internal research infrastructure.
 
-Public validation code is licensed under the [MIT License](LICENSE). Caspian
-Labs, CASP, the product, private software, research artifacts, and brand assets
-remain separately protected. See [TRADEMARK.md](TRADEMARK.md).
-
+The public validation script is licensed under the
+[MIT License](scripts/LICENSE). The repository's documentation, evidence
+records, visual assets, Caspian Labs and CASP materials, private software, and
+research artifacts remain separately protected. See [LICENSE](LICENSE) and
+[TRADEMARK.md](TRADEMARK.md).
