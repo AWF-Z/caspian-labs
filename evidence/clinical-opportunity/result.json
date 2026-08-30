@@ -1,0 +1,30 @@
+{
+  "schema": "caspian-labs.public-evidence.v1",
+  "result_id": "QUARRY-OU-LEVEL80-FIVE-FOLD-HISTORICAL",
+  "relationship_to_casp": "historical opportunity-ranking lineage",
+  "data_source": "public historical AACT snapshots derived from ClinicalTrials.gov",
+  "folds": 5,
+  "later_positive_opportunities": 8031,
+  "attention_budget": 0.009,
+  "casp_lineage": {
+    "historical_artifact_name": "Quarry OU",
+    "hits": 3821,
+    "capture_rate": 0.4757801021043457
+  },
+  "comparison": {
+    "identity": "unchanged name-blind GPT-5.6 Sol-authored historical ranking strategy",
+    "hits": 3155,
+    "capture_rate": 0.3928526958037604
+  },
+  "absolute_advantage_points": 8.292865147553231,
+  "relative_lift": 0.21109350237717908,
+  "paired_condition_cluster_95_interval_points": [
+    7.297484354912792,
+    9.324288447330592
+  ],
+  "exact_replay": true,
+  "sealed_source_sha256": "e695cc3ebafbf0a16d293732d9cc359fb0e93c3832920fafee337798e702613a",
+  "precommitted_activation_gate_passed": false,
+  "claim_boundary": "Five frozen opened historical development folds. Not prospective, not live ChatGPT, not OpenAI validation, and not a universal cross-domain result."
+}
+

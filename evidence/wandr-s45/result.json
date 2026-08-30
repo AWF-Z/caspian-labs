@@ -1,0 +1,36 @@
+{
+  "schema": "caspian-labs.public-evidence.v1",
+  "result_id": "CASP-5.0-WANDR-S45-V41",
+  "status": "SEALED_FINAL_45_GENUINE_OFFICIAL_SCORES",
+  "surface": "WANDR matched 45-task subset",
+  "evaluator": "official WANDR evaluator",
+  "task_count": 45,
+  "genuine_metric_bearing_receipts": 45,
+  "infrastructure_zero_fills": 0,
+  "metrics": {
+    "mean_soft_f1": 0.583303196742441,
+    "mean_hard_f1": 0.4926476110146942,
+    "mean_soft_precision": 0.9173059734270983,
+    "mean_soft_recall": 0.44597946211991907,
+    "mean_hard_precision": 0.8593156020015419,
+    "mean_hard_recall": 0.36338611149901473
+  },
+  "published_matched_leader": {
+    "system": "Perplexity Search as Code",
+    "setting": "xhigh",
+    "soft_f1": 0.447,
+    "hard_f1": 0.224,
+    "completed_tasks": 44
+  },
+  "comparison": {
+    "relative_soft_f1_improvement": 0.3049288517739172,
+    "hard_f1_multiple": 2.1993196911816704
+  },
+  "sealed_source_hashes": {
+    "final_aggregate_sha256": "36d94623d9916842bb9d3fbf0b8b4f385180e3d7f57326035bedfdbd00e8d7d1",
+    "package_seal_sha256": "fae5949579b87fa18c39fd8e854e6d7e03b8853e64f35f5978a9024461ada62a",
+    "preserved_task_registry_sha256": "d9741319d276fea2c6c6605a90a5ffcbdd4dd5f8e6099634eab9170b474af56c"
+  },
+  "claim_boundary": "Matched 45-task official-evaluator comparison against published WANDR Table 6 production-system values. Not a full-500 leaderboard result, universal superiority claim, independent replication, or endorsement."
+}
+

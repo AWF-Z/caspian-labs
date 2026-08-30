@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="720" viewBox="0 0 1440 720" role="img" aria-labelledby="title desc">
+  <title id="title">One CASP engine, three product configurations</title>
+  <desc id="desc">CASP Core, Overlay, and Enterprise use one research and decision engine at different levels of integration and control.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07101c"/><stop offset="1" stop-color="#0c1d2b"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#56e7c2"/><stop offset="1" stop-color="#70a7ff"/></linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#9db4cf" stroke-opacity="0.045"/></pattern>
+  </defs>
+  <rect width="1440" height="720" rx="28" fill="url(#bg)"/>
+  <rect width="1440" height="720" rx="28" fill="url(#grid)"/>
+  <text x="72" y="74" fill="#56e7c2" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="720" letter-spacing="4">ONE CASP ENGINE</text>
+  <text x="72" y="132" fill="#f4f8fc" font-family="Inter,Arial,sans-serif" font-size="42" font-weight="760">Direct when you need it. Integrated when you are ready.</text>
+  <text x="72" y="171" fill="#a5b5c9" font-family="Inter,Arial,sans-serif" font-size="18">The research job stays the same. Access, integration, privacy, and organizational memory expand.</text>
+
+  <g transform="translate(72 224)" font-family="Inter,Arial,sans-serif">
+    <g>
+      <rect width="392" height="340" rx="22" fill="#0f1d2e" stroke="#2d455d"/>
+      <rect x="24" y="24" width="54" height="54" rx="15" fill="#123a39"/>
+      <text x="51" y="60" text-anchor="middle" fill="#56e7c2" font-size="20" font-weight="780">01</text>
+      <text x="24" y="121" fill="#f3f7fc" font-size="26" font-weight="750">CASP Core</text>
+      <text x="24" y="154" fill="#56e7c2" font-size="13" font-weight="680" letter-spacing="1.5">DIRECT RESEARCH</text>
+      <text x="24" y="201" fill="#a7b7ca" font-size="16">For founders, developers, researchers,</text>
+      <text x="24" y="228" fill="#a7b7ca" font-size="16">and product teams. Use CASP through</text>
+      <text x="24" y="255" fill="#a7b7ca" font-size="16">a direct product, supported AI host,</text>
+      <text x="24" y="282" fill="#a7b7ca" font-size="16">or API.</text>
+      <rect x="24" y="305" width="238" height="1" fill="#2b4055"/>
+      <text x="24" y="329" fill="#d8e2ee" font-size="13" font-weight="650">Public sources · local files · approved models</text>
+    </g>
+
+    <g transform="translate(420)">
+      <rect width="392" height="340" rx="22" fill="#102432" stroke="#347064" stroke-width="1.5"/>
+      <rect x="24" y="24" width="54" height="54" rx="15" fill="#123a39"/>
+      <text x="51" y="60" text-anchor="middle" fill="#56e7c2" font-size="20" font-weight="780">02</text>
+      <text x="24" y="121" fill="#f3f7fc" font-size="26" font-weight="750">CASP Overlay</text>
+      <text x="24" y="154" fill="#56e7c2" font-size="13" font-weight="680" letter-spacing="1.5">STRENGTHEN THE STACK</text>
+      <text x="24" y="201" fill="#a7b7ca" font-size="16">Prove value with public and customer-</text>
+      <text x="24" y="228" fill="#a7b7ca" font-size="16">selected evidence first. Add approved</text>
+      <text x="24" y="255" fill="#a7b7ca" font-size="16">exports, research tools, and read-only</text>
+      <text x="24" y="282" fill="#a7b7ca" font-size="16">sources as trust grows.</text>
+      <rect x="24" y="305" width="238" height="1" fill="#2b4055"/>
+      <text x="24" y="329" fill="#d8e2ee" font-size="13" font-weight="650">Minimum trust surface · no rip-and-replace</text>
+    </g>
+
+    <g transform="translate(840)">
+      <rect width="392" height="340" rx="22" fill="#0f1d2e" stroke="#2d455d"/>
+      <rect x="24" y="24" width="54" height="54" rx="15" fill="#172f4a"/>
+      <text x="51" y="60" text-anchor="middle" fill="#70a7ff" font-size="20" font-weight="780">03</text>
+      <text x="24" y="121" fill="#f3f7fc" font-size="26" font-weight="750">CASP Enterprise</text>
+      <text x="24" y="154" fill="#70a7ff" font-size="13" font-weight="680" letter-spacing="1.5">PRIVATE + CONTINUOUS</text>
+      <text x="24" y="201" fill="#a7b7ca" font-size="16">Private deployment, governance,</text>
+      <text x="24" y="228" fill="#a7b7ca" font-size="16">approved connectors, team workflows,</text>
+      <text x="24" y="255" fill="#a7b7ca" font-size="16">continuous research, and organization-</text>
+      <text x="24" y="282" fill="#a7b7ca" font-size="16">specific outcome memory.</text>
+      <rect x="24" y="305" width="238" height="1" fill="#2b4055"/>
+      <text x="24" y="329" fill="#d8e2ee" font-size="13" font-weight="650">Customer VPC · control · auditability</text>
+    </g>
+  </g>
+
+  <g transform="translate(206 614)" font-family="Inter,Arial,sans-serif">
+    <rect width="1028" height="58" rx="29" fill="#0e2030" stroke="#2c485e"/>
+    <text x="514" y="25" text-anchor="middle" fill="#56e7c2" font-size="12" font-weight="720" letter-spacing="2.5">THE COMPOUNDING LOOP</text>
+    <text x="514" y="46" text-anchor="middle" fill="#dce5ef" font-size="15">Discover → investigate → decide → test → monitor → learn</text>
+  </g>
+</svg>
