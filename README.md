@@ -41,7 +41,7 @@ research system to map a large field, investigate the candidates, and support
 the required records with evidence the evaluator independently checks.
 
 <p align="center">
-  <img src="assets/wandr-field-v2.svg" alt="CASP led the matched 45-task WANDR field on soft and hard F1" width="100%">
+  <img src="assets/wandr-field-v3.svg" alt="CASP led the matched 45-task WANDR field on soft and hard F1" width="100%">
 </p>
 
 CASP scored **0.583 soft F1** and **0.493 hard F1** under the official evaluator.
