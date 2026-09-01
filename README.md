@@ -25,6 +25,8 @@ enter, fund, or test, and the strongest direction never enters the comparison.
 what conventional AI and research miss, makes the strongest next move clear,
 and learns from the outcome.**
 
+Independent development on CASP began July 10, 2026.
+
 CASP searches beyond the obvious framing, constructs genuinely different
 directions, completes the evidence needed to judge them, and concentrates a
 team's limited attention on the strongest next move. It then records the
