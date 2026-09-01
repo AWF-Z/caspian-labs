@@ -1,9 +1,8 @@
 # Evidence
 
-Caspian Labs separates product claims, benchmark results, historical results,
-and commercial traction. This repository publishes the first three where a
-sanitized record is available. It does not represent benchmark work as customer
-usage, revenue, or independent commercial validation.
+This repository publishes sanitized evidence for CASP's benchmark and
+historical results. The underlying artifacts and claim boundaries are described
+below.
 
 ## WANDR matched 45-task result
 
