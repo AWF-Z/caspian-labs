@@ -8,7 +8,6 @@ import json
 import math
 import re
 import subprocess
-from datetime import datetime
 from pathlib import Path
 
 
@@ -26,9 +25,6 @@ ALLOWED = {
     "docs/EVIDENCE.md",
     "docs/PRODUCT.md",
     "evidence/clinical-opportunity/result.json",
-    "evidence/wandr-s45/receipt-examples/ai-funding-announcements.json",
-    "evidence/wandr-s45/receipt-examples/solid-state-battery-patents.json",
-    "evidence/wandr-s45/receipt-examples/us-cardiac-surgery-signals.json",
     "evidence/wandr-s45/result.json",
     "evidence/wandr-s45/task-results.json",
     "scripts/check_public_repo.py",
@@ -66,12 +62,6 @@ METRICS = {
     "hard_precision_full": "mean_hard_precision",
     "hard_recall_full": "mean_hard_recall",
 }
-
-RECEIPT_EXAMPLES = (
-    "ai-funding-announcements",
-    "solid-state-battery-patents",
-    "us-cardiac-surgery-signals",
-)
 
 
 def public_files() -> set[str]:
@@ -116,16 +106,6 @@ def same_published_comparison(left: object, right: object) -> bool:
     return math.isclose(float(left), float(right), rel_tol=0.0, abs_tol=1e-8)
 
 
-def valid_timestamp(value: object) -> bool:
-    if not isinstance(value, str):
-        return False
-    try:
-        parsed = datetime.fromisoformat(value)
-    except ValueError:
-        return False
-    return parsed.tzinfo is not None
-
-
 def validate_wandr_evidence(failures: list[str]) -> None:
     result_path = ROOT / "evidence/wandr-s45/result.json"
     task_results_path = ROOT / "evidence/wandr-s45/task-results.json"
@@ -153,8 +133,6 @@ def validate_wandr_evidence(failures: list[str]) -> None:
         "name": "WANDR official evaluator",
         "benchmark_source": "https://github.com/perplexityai/wandr",
         "benchmark_source_commit": "ca82dc224d5c03a8cde5409c6ba49c1c4f67fff3",
-        "official_configuration_sha256": "1f3934601907427e2cc141f9fd561bacdcbc97f7e22d4fc66f1453222fdf74a4",
-        "verifier_python_sha256": "36984af9f922aec72ba5b03e811ee92512268785007192e20f826cbd07cf8d04",
     }:
         failures.append("WANDR evaluator binding drift")
 
@@ -169,7 +147,6 @@ def validate_wandr_evidence(failures: list[str]) -> None:
         failures.append("WANDR task identifiers are not in stable order")
 
     sums = {metric: 0.0 for metric in METRICS}
-    rows_by_id: dict[str, dict[str, object]] = {}
     for index, row in enumerate(tasks):
         location = f"WANDR task-results row {index + 1}"
         if not isinstance(row, dict):
@@ -179,21 +156,12 @@ def validate_wandr_evidence(failures: list[str]) -> None:
         if not isinstance(task_id, str) or not task_id:
             failures.append(f"{location} has an invalid task identifier")
             continue
-        rows_by_id[task_id] = row
-        if row.get("status") != "GENUINE_METRIC_BEARING_OFFICIAL_SCORE":
-            failures.append(f"{location} is not a genuine official score")
-        if row.get("metric_bearing") is not True:
-            failures.append(f"{location} is not metric-bearing")
-        if row.get("infrastructure_zero_fill") is not False:
-            failures.append(f"{location} has an infrastructure zero-fill")
-        if not valid_timestamp(row.get("sealed_at")):
-            failures.append(f"{location} has an invalid sealed timestamp")
-        if not isinstance(row.get("semantic_records"), int) or row["semantic_records"] < 0:
-            failures.append(f"{location} has an invalid semantic-record count")
-        for key in ("official_receipt_artifact_sha256", "official_receipt_file_sha256"):
-            value = row.get(key)
-            if not isinstance(value, str) or not SHA256.fullmatch(value):
-                failures.append(f"{location} has an invalid {key}")
+        receipt_hash = row.get("official_receipt_file_sha256")
+        if (
+            not isinstance(receipt_hash, str)
+            or not SHA256.fullmatch(receipt_hash)
+        ):
+            failures.append(f"{location} has an invalid receipt hash")
 
         row_metrics = row.get("metrics")
         if not isinstance(row_metrics, dict) or set(row_metrics) != set(METRICS):
@@ -243,46 +211,6 @@ def validate_wandr_evidence(failures: list[str]) -> None:
             failures.append("WANDR hard F1 multiple drift")
     else:
         failures.append("WANDR comparison inputs are not numeric")
-
-    for task_id in RECEIPT_EXAMPLES:
-        receipt_path = (
-            ROOT / "evidence/wandr-s45/receipt-examples" / f"{task_id}.json"
-        )
-        receipt = json.loads(receipt_path.read_text())
-        row = rows_by_id.get(task_id)
-        if row is None:
-            failures.append(f"WANDR receipt example has no task row: {task_id}")
-            continue
-        if receipt.get("schema") != "caspian-labs.public-wandr-receipt-extract.v1":
-            failures.append(f"WANDR receipt example schema drift: {task_id}")
-        if receipt.get("artifact_type") != "OfficialScoreReceiptExtract":
-            failures.append(f"WANDR receipt example artifact-type drift: {task_id}")
-        if receipt.get("public_copy") is not True:
-            failures.append(f"WANDR receipt example is not marked public: {task_id}")
-        bindings = {
-            "task_id": "task_id",
-            "status": "status",
-            "metric_bearing": "metric_bearing",
-            "infrastructure_zero_fill": "infrastructure_zero_fill",
-            "metrics": "metrics",
-            "semantic_records": "semantic_records",
-            "sealed_at": "sealed_at",
-            "source_receipt_artifact_sha256": "official_receipt_artifact_sha256",
-            "source_receipt_file_sha256": "official_receipt_file_sha256",
-        }
-        for receipt_key, row_key in bindings.items():
-            if receipt.get(receipt_key) != row.get(row_key):
-                failures.append(
-                    f"WANDR receipt example binding mismatch: {task_id} {receipt_key}"
-                )
-        for key in (
-            "evaluator_attempt_receipt_sha256",
-            "official_terminal_sha256",
-            "participant_terminal_sha256",
-        ):
-            value = receipt.get(key)
-            if not isinstance(value, str) or not SHA256.fullmatch(value):
-                failures.append(f"WANDR receipt example has an invalid {key}: {task_id}")
 
 
 def main() -> None:

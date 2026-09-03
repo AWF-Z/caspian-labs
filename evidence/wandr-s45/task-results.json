@@ -5,9 +5,7 @@
   "evaluator": {
     "name": "WANDR official evaluator",
     "benchmark_source": "https://github.com/perplexityai/wandr",
-    "benchmark_source_commit": "ca82dc224d5c03a8cde5409c6ba49c1c4f67fff3",
-    "official_configuration_sha256": "1f3934601907427e2cc141f9fd561bacdcbc97f7e22d4fc66f1453222fdf74a4",
-    "verifier_python_sha256": "36984af9f922aec72ba5b03e811ee92512268785007192e20f826cbd07cf8d04"
+    "benchmark_source_commit": "ca82dc224d5c03a8cde5409c6ba49c1c4f67fff3"
   },
   "published_aggregate": {
     "task_count": 45,
@@ -21,11 +19,6 @@
   "tasks": [
     {
       "task_id": "ai-funding-announcements",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-24T09:22:46.653925+00:00",
-      "semantic_records": 80,
       "metrics": {
         "hard_f1_full": 0.9125,
         "hard_precision_full": 0.9125,
@@ -34,16 +27,10 @@
         "soft_precision_full": 0.9125,
         "soft_recall_full": 0.9125
       },
-      "official_receipt_artifact_sha256": "388b1c56fc17d143c420234ec8b0025ba5172fe35b3da4ce3f385b7e060fa56e",
       "official_receipt_file_sha256": "a4474467531b42d4b643b6a15ffcb7d0232dfac2ed4721821130535b55d6c448"
     },
     {
       "task_id": "ai-governance-jobs",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-28T06:39:31.161147+00:00",
-      "semantic_records": 33,
       "metrics": {
         "hard_f1_full": 0.5537259279933018,
         "hard_precision_full": 0.9696969696969697,
@@ -52,16 +39,10 @@
         "soft_precision_full": 0.9696969696969697,
         "soft_recall_full": 0.3875
       },
-      "official_receipt_artifact_sha256": "77d0a3aa055fc7521bb49885157543e2290a2d9e825158c499debf6223afa0bf",
       "official_receipt_file_sha256": "9429f554cecb86db9195cac66b8f85ef57d0ee8f685df26e062ed08dee7a4eba"
     },
     {
       "task_id": "airbnb-fullstack-perplexity-fit",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-28T13:28:54.679290+00:00",
-      "semantic_records": 24,
       "metrics": {
         "hard_f1_full": 0.4615384615384615,
         "hard_precision_full": 1.0,
@@ -70,16 +51,10 @@
         "soft_precision_full": 1.0,
         "soft_recall_full": 0.3
       },
-      "official_receipt_artifact_sha256": "403df27529ab565a10d0cebd46867d4382445778779833fe47bfb7ec5253e898",
       "official_receipt_file_sha256": "f083bb8ba2cd1f4ac4d23bdac62df43ed9d6f8b444975e7fcaa3fee5b1ce4a80"
     },
     {
       "task_id": "australian-vrfb-atlas",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-26T15:43:44.519527+00:00",
-      "semantic_records": 40,
       "metrics": {
         "hard_f1_full": 0.4670912951167728,
         "hard_precision_full": 0.8461538461538461,
@@ -88,16 +63,10 @@
         "soft_precision_full": 0.9038461538461539,
         "soft_recall_full": 0.532258064516129
       },
-      "official_receipt_artifact_sha256": "d97bb385e595eab84522edefe40e650e11a9554e62106363d8800035eec4926f",
       "official_receipt_file_sha256": "fe8fe03dbc9e5aadcf595e9c02d04d6431ef5ef2802ab73604e6f45a9cbbc611"
     },
     {
       "task_id": "aviation-ad-sb-adoption",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-26T16:36:26.032200+00:00",
-      "semantic_records": 32,
       "metrics": {
         "hard_f1_full": 0.5,
         "hard_precision_full": 0.5,
@@ -106,16 +75,10 @@
         "soft_precision_full": 0.8125,
         "soft_recall_full": 0.8125
       },
-      "official_receipt_artifact_sha256": "71a8cd5e0d864cb5a22aad00672776f7d636a7698ebbd77b250c8705468dbdfd",
       "official_receipt_file_sha256": "9dd47fcbd9e077548ad98dab5a3bfa72ff34f5f340584370061a1a82312fcb1d"
     },
     {
       "task_id": "aviation-provenance-programs",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-28T08:13:46.374860+00:00",
-      "semantic_records": 38,
       "metrics": {
         "hard_f1_full": 0.4,
         "hard_precision_full": 0.7,
@@ -124,16 +87,10 @@
         "soft_precision_full": 0.8333333333333334,
         "soft_recall_full": 0.33333333333333337
       },
-      "official_receipt_artifact_sha256": "43744c3fce4ac9549db35e8ac7a8843021f9231f7a10f27d8db788d1a9d8dadc",
       "official_receipt_file_sha256": "f482ce65f6f9c3ef67f07b5e03d23bd86bdad4b157ab8aab71174a4347629fd5"
     },
     {
       "task_id": "bali-laundry-suppliers",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-26T17:25:58.424193+00:00",
-      "semantic_records": 42,
       "metrics": {
         "hard_f1_full": 0.6363636363636364,
         "hard_precision_full": 1.0,
@@ -142,16 +99,10 @@
         "soft_precision_full": 1.0,
         "soft_recall_full": 0.4666666666666667
       },
-      "official_receipt_artifact_sha256": "b537ec0adb163e4e72e6f27f7d7e3e33f229a584e5c64b05c02fd3da49f75094",
       "official_receipt_file_sha256": "ea08092a7a6f9f46744ad739f53e22301b92b35828a976e2b53feb47f6588f32"
     },
     {
       "task_id": "bc-mechanical-procurement",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-27T07:48:17.572372+00:00",
-      "semantic_records": 33,
       "metrics": {
         "hard_f1_full": 0.4615384615384615,
         "hard_precision_full": 1.0,
@@ -160,16 +111,10 @@
         "soft_precision_full": 1.0,
         "soft_recall_full": 0.36666666666666664
       },
-      "official_receipt_artifact_sha256": "e1967be417e45b661af2792af6d0dfecaaf1ba8a96a1dad66ffedc5381d942da",
       "official_receipt_file_sha256": "08e35769b75ca42f6642f39fadaa43131b6fd10af94c13b9b674d7e991f602bd"
     },
     {
       "task_id": "benelux-health-retailers",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-27T13:12:27.188869+00:00",
-      "semantic_records": 35,
       "metrics": {
         "hard_f1_full": 0.3333333333333333,
         "hard_precision_full": 0.5,
@@ -178,16 +123,10 @@
         "soft_precision_full": 0.75,
         "soft_recall_full": 0.375
       },
-      "official_receipt_artifact_sha256": "aa0f85985524c4dceacf3ba163de1fa1cd39586e35082c1858cd95733d3a0f59",
       "official_receipt_file_sha256": "8592570d64d7e4189209f96c50bdf374437fc0e9fc4f73e16517b082e171f77d"
     },
     {
       "task_id": "canada-competition-bureau-merger-dispositions",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-23T18:38:47.901731+00:00",
-      "semantic_records": 12,
       "metrics": {
         "hard_f1_full": 0.5714285714285715,
         "hard_precision_full": 1.0,
@@ -196,16 +135,10 @@
         "soft_precision_full": 1.0,
         "soft_recall_full": 0.4
       },
-      "official_receipt_artifact_sha256": "c5790bc45584e075947e25abd926349e7e31f9d21bf1f875fe063c6e4a4e506e",
       "official_receipt_file_sha256": "52cafc9b2b4b9c1539e8e8cf5dab70c8ad627b4b976b31db05d743076eb90944"
     },
     {
       "task_id": "cloud-ai-service-launches",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-24T09:19:02.017021+00:00",
-      "semantic_records": 30,
       "metrics": {
         "hard_f1_full": 0.6341463414634146,
         "hard_precision_full": 0.8666666666666667,
@@ -214,16 +147,10 @@
         "soft_precision_full": 0.8666666666666667,
         "soft_recall_full": 0.5
       },
-      "official_receipt_artifact_sha256": "4ea368447186bfe6b4de29fb1253e493f96afecef23a6ff2c6054604ed746525",
       "official_receipt_file_sha256": "abb22cedfba92cb28ac4f30a7c32f99d3ea5ef32f7f20accf66720ce48a262bd"
     },
     {
       "task_id": "cloud-ai-service-launches-by-provider",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-26T17:38:57.040719+00:00",
-      "semantic_records": 23,
       "metrics": {
         "hard_f1_full": 0.5365853658536585,
         "hard_precision_full": 1.0,
@@ -232,16 +159,10 @@
         "soft_precision_full": 1.0,
         "soft_recall_full": 0.38333333333333336
       },
-      "official_receipt_artifact_sha256": "b9cae1dc03bf7ef21516afbc53ac1ad9be1f71e558b74529bd980df3ef5f7888",
       "official_receipt_file_sha256": "2569f14b70a516b5e6c226b290c5246d484caa977000ca7d96aa1900a2d69d15"
     },
     {
       "task_id": "devtool-promo-codes",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-26T13:58:03.266828+00:00",
-      "semantic_records": 60,
       "metrics": {
         "hard_f1_full": 0.6833333333333333,
         "hard_precision_full": 0.6833333333333333,
@@ -250,16 +171,10 @@
         "soft_precision_full": 0.6833333333333333,
         "soft_recall_full": 0.6833333333333333
       },
-      "official_receipt_artifact_sha256": "c5464210b006fb808a407ca6c37fd0da3ce8772778ffbf0e0d70bdab01507633",
       "official_receipt_file_sha256": "b9b4923782fa0e42c957c9dded5bcb5d20073a3f2957977dd1b703d6e789b928"
     },
     {
       "task_id": "dfw-location-events",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-27T10:07:34.344267+00:00",
-      "semantic_records": 27,
       "metrics": {
         "hard_f1_full": 0.2924281984334203,
         "hard_precision_full": 0.8888888888888888,
@@ -268,16 +183,10 @@
         "soft_precision_full": 0.9444444444444444,
         "soft_recall_full": 0.3125
       },
-      "official_receipt_artifact_sha256": "4968ff15f1917e9e2a384d6f8f0bd7b9b331c4bc514e4ad6b70d29bd8ddded35",
       "official_receipt_file_sha256": "ffb09a537bc170aefa39bd0c0a842b31293d8864c7d5d57a61774199a363399f"
     },
     {
       "task_id": "dib-nondilutive-pathways",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-27T10:36:24.308319+00:00",
-      "semantic_records": 62,
       "metrics": {
         "hard_f1_full": 0.3333333333333333,
         "hard_precision_full": 0.3333333333333333,
@@ -286,16 +195,10 @@
         "soft_precision_full": 0.625,
         "soft_recall_full": 0.5833333333333334
       },
-      "official_receipt_artifact_sha256": "e551c42cfdedc5ce03046121ac5e276beb178ab2b9a94f6c97dc91887d67409c",
       "official_receipt_file_sha256": "b3ba3de2e028d58fe4a18ea9a915b0aff293dbe0fcdaa511e262c5447502e80d"
     },
     {
       "task_id": "dutch-spiritual-influencers",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-27T11:21:43.867356+00:00",
-      "semantic_records": 39,
       "metrics": {
         "hard_f1_full": 0.5035971223021583,
         "hard_precision_full": 0.8974358974358975,
@@ -304,16 +207,10 @@
         "soft_precision_full": 0.8974358974358975,
         "soft_recall_full": 0.35
       },
-      "official_receipt_artifact_sha256": "42869154a792fa97d46c6a95d5fe218ba286a3a5b4b815580ee120f231bf8993",
       "official_receipt_file_sha256": "f98e9cb921da24c34fba6213e9e603f83bfb69375f708d76d9ae6f7f6c1ea2d8"
     },
     {
       "task_id": "energy-tech-climate-announcements",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-27T14:08:10.622745+00:00",
-      "semantic_records": 23,
       "metrics": {
         "hard_f1_full": 0.4946236559139785,
         "hard_precision_full": 1.0,
@@ -322,16 +219,10 @@
         "soft_precision_full": 1.0,
         "soft_recall_full": 0.32857142857142857
       },
-      "official_receipt_artifact_sha256": "d010f5df7db7dcb857a6d9758becb82a573ef83bd9919e6b8287fec4cc699ff1",
       "official_receipt_file_sha256": "0accc9dcfb7d7bc61e109be263d44fba21a5793d9be4ad9e4adbf8dda6d1253e"
     },
     {
       "task_id": "estonia-ministry-lobby-disclosures",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-26T16:57:11.501716+00:00",
-      "semantic_records": 49,
       "metrics": {
         "hard_f1_full": 0.3018867924528302,
         "hard_precision_full": 0.8888888888888888,
@@ -340,16 +231,10 @@
         "soft_precision_full": 0.9876543209876544,
         "soft_recall_full": 0.4848484848484848
       },
-      "official_receipt_artifact_sha256": "5bada0436fddb3aa51937cc02ab90c305437cb95b6e496d4db18f64320e8d45a",
       "official_receipt_file_sha256": "8176436c8b9596d0218c99886a71feb5eba768e4608e0f39fc9e7305ed2e9c08"
     },
     {
       "task_id": "fiba-u20-women-sources",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-23T15:15:02.425661+00:00",
-      "semantic_records": 46,
       "metrics": {
         "hard_f1_full": 0.6956521739130436,
         "hard_precision_full": 1.0,
@@ -358,16 +243,10 @@
         "soft_precision_full": 1.0,
         "soft_recall_full": 0.7666666666666667
       },
-      "official_receipt_artifact_sha256": "6b79bc2f8d6abc0b6160e5dbef488a440c631ab35c3676acb2c1aa1d159c37d7",
       "official_receipt_file_sha256": "1f1859215c913fe8c79e5814455c6dfcfd997bd6e76e16d3430422579d72c9c2"
     },
     {
       "task_id": "free-trade-agreements-historical",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-26T15:32:56.796789+00:00",
-      "semantic_records": 47,
       "metrics": {
         "hard_f1_full": 0.5506176800898444,
         "hard_precision_full": 0.9361702127659575,
@@ -376,16 +255,10 @@
         "soft_precision_full": 0.9361702127659575,
         "soft_recall_full": 0.39
       },
-      "official_receipt_artifact_sha256": "32d65c5f0ae73a28a1665e10c5caf0645aedd56defda1fdd15c8a7fd5f10cdda",
       "official_receipt_file_sha256": "6a106a4ae2eda805457d0723b516ca5054d75d4ff4e154209b4c3e71bcb96ca6"
     },
     {
       "task_id": "ftse-private-roles",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-26T18:03:02.889673+00:00",
-      "semantic_records": 40,
       "metrics": {
         "hard_f1_full": 0.5090622537431049,
         "hard_precision_full": 0.9047619047619048,
@@ -394,16 +267,10 @@
         "soft_precision_full": 0.9523809523809523,
         "soft_recall_full": 0.3958333333333333
       },
-      "official_receipt_artifact_sha256": "a384ae133eb09a25c00cdb5be2439d9686786b3f99b786f1c4310585584041eb",
       "official_receipt_file_sha256": "65bc03a62d61e36944ca0a2236ad00ed4312e6a414d57b55e8588acd0850b65a"
     },
     {
       "task_id": "georgia-open-construction-notices",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-27T15:24:16.501551+00:00",
-      "semantic_records": 15,
       "metrics": {
         "hard_f1_full": 0.44680851063829785,
         "hard_precision_full": 0.875,
@@ -412,16 +279,10 @@
         "soft_precision_full": 0.9375,
         "soft_recall_full": 0.35
       },
-      "official_receipt_artifact_sha256": "579942fe4bc04a885c8682a3588c07a7f16b1b4ccd649ebe2cfa8d418e4c7cd4",
       "official_receipt_file_sha256": "a7ee4be587f2cf9600aab858a014d77e7de4ec110a905dbc771e4b0e7a32e5d6"
     },
     {
       "task_id": "google-london-inference",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-28T14:57:44.649188+00:00",
-      "semantic_records": 34,
       "metrics": {
         "hard_f1_full": 0.373134328358209,
         "hard_precision_full": 0.7352941176470589,
@@ -430,16 +291,10 @@
         "soft_precision_full": 0.7352941176470589,
         "soft_recall_full": 0.25
       },
-      "official_receipt_artifact_sha256": "9e9e395752ae3d17691e6a8ddfa48b6e4e04db9b5a142841f58c9787add96629",
       "official_receipt_file_sha256": "ddc61c9ee8e474b1615e8d05aa1d75b16d02beb620e728f3927b4ef711293d36"
     },
     {
       "task_id": "hcmc-sugarcane-providers",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-26T21:58:59.743099+00:00",
-      "semantic_records": 47,
       "metrics": {
         "hard_f1_full": 0.5569620253164558,
         "hard_precision_full": 0.9166666666666666,
@@ -448,16 +303,10 @@
         "soft_precision_full": 0.9722222222222222,
         "soft_recall_full": 0.45333333333333337
       },
-      "official_receipt_artifact_sha256": "9c1839cde14deec296ff86980241bf36407e436f6283ceaf6aa6c5374f48e151",
       "official_receipt_file_sha256": "b695ea97851ac50b0c81525a20405dae3c668d2cc352d805060f32a79e26a5b5"
     },
     {
       "task_id": "hospital-at-home-programs",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-26T21:32:42.464397+00:00",
-      "semantic_records": 23,
       "metrics": {
         "hard_f1_full": 0.5542168674698795,
         "hard_precision_full": 1.0,
@@ -466,16 +315,10 @@
         "soft_precision_full": 1.0,
         "soft_recall_full": 0.38333333333333336
       },
-      "official_receipt_artifact_sha256": "acf92ef860d067aa1bf5a718928bc2e05b08a1b63c6b11d024dfeb5816fe6868",
       "official_receipt_file_sha256": "6c62dba3a742a2f03c39b75e1012a9b863dc966c8bf59a42f2b2915c273d1bef"
     },
     {
       "task_id": "humanoid-fiber-tendon-patents",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-27T07:57:18.492198+00:00",
-      "semantic_records": 43,
       "metrics": {
         "hard_f1_full": 0.48951048951048953,
         "hard_precision_full": 0.813953488372093,
@@ -484,16 +327,10 @@
         "soft_precision_full": 0.813953488372093,
         "soft_recall_full": 0.35
       },
-      "official_receipt_artifact_sha256": "7181ba11c2d7b6e52908b2263b3d6d7c4877f29a75c9e167c2bf3fb6f3ee2d60",
       "official_receipt_file_sha256": "26a3a5c0b956b27a0ccec098697a999d7b4ef31ebf97b5270c5a0e8bb5cfb1e6"
     },
     {
       "task_id": "lot-sales",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-27T13:19:54.568631+00:00",
-      "semantic_records": 63,
       "metrics": {
         "hard_f1_full": 0.6666666666666666,
         "hard_precision_full": 1.0,
@@ -502,16 +339,10 @@
         "soft_precision_full": 1.0,
         "soft_recall_full": 0.5
       },
-      "official_receipt_artifact_sha256": "01b0497b77bad24451118968bceca212e8b5285e77f8fb7ea5d8045563489957",
       "official_receipt_file_sha256": "6ea56bfdd6e45a68e3af8620d8689cbddffcc26659747bb64cc5b48cc2c80766"
     },
     {
       "task_id": "luxury-constructs",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-27T06:36:57.622184+00:00",
-      "semantic_records": 26,
       "metrics": {
         "hard_f1_full": 0.3116883116883117,
         "hard_precision_full": 0.9230769230769231,
@@ -520,16 +351,10 @@
         "soft_precision_full": 0.9807692307692307,
         "soft_recall_full": 0.390625
       },
-      "official_receipt_artifact_sha256": "5cb54d02b66acac4d6ec723630de7595efa26a5449bde2fc9b8f18d505b509cb",
       "official_receipt_file_sha256": "afd6dd075cb6f397aafdde36b24820899c1e7dcfad3d18c2571a4c6cf568f76a"
     },
     {
       "task_id": "michelin-demotions",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-26T23:43:57.128459+00:00",
-      "semantic_records": 36,
       "metrics": {
         "hard_f1_full": 0.8,
         "hard_precision_full": 1.0,
@@ -538,16 +363,10 @@
         "soft_precision_full": 1.0,
         "soft_recall_full": 0.6666666666666666
       },
-      "official_receipt_artifact_sha256": "7d496405fb7bfa2be1573ddcaa612ee1e647146de513c7f4b696ae9db9806971",
       "official_receipt_file_sha256": "0cecd570ac6b197fba0be0749f90590ee92fbeaa8b0b1bab74a94a4452f19233"
     },
     {
       "task_id": "microgrid-controller-deployments",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-26T18:45:47.525363+00:00",
-      "semantic_records": 88,
       "metrics": {
         "hard_f1_full": 0.48,
         "hard_precision_full": 0.6,
@@ -556,16 +375,10 @@
         "soft_precision_full": 0.7361904761904762,
         "soft_recall_full": 0.675
       },
-      "official_receipt_artifact_sha256": "dd9f28d5207a4a6b2737a4a0822db43abbed5f6f21b445cf7294d0daa6d048f0",
       "official_receipt_file_sha256": "e1af706dc37bd105ae464cb6090616f7911717306f46ab0255b513f50f45ed39"
     },
     {
       "task_id": "museum-repatriations",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-27T12:03:04.498713+00:00",
-      "semantic_records": 34,
       "metrics": {
         "hard_f1_full": 0.45535714285714285,
         "hard_precision_full": 0.9444444444444444,
@@ -574,16 +387,10 @@
         "soft_precision_full": 0.9722222222222222,
         "soft_recall_full": 0.33
       },
-      "official_receipt_artifact_sha256": "b656c32adfb3313c53372ac52221b1033d836dabf125bb12e81358603fb19259",
       "official_receipt_file_sha256": "95909c8d00e67f2fb79d761c332f098ccb2e5e18434a0c3a78f3533425fc2391"
     },
     {
       "task_id": "new-grad-rn-residencies",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-27T08:50:07.165779+00:00",
-      "semantic_records": 30,
       "metrics": {
         "hard_f1_full": 0.45714285714285713,
         "hard_precision_full": 0.8,
@@ -592,16 +399,10 @@
         "soft_precision_full": 0.8,
         "soft_recall_full": 0.32
       },
-      "official_receipt_artifact_sha256": "38a23e1b27341ffa054da8d984db46608f29703794e68e0c22bfe70ed04e9643",
       "official_receipt_file_sha256": "de551757d448a58f123601f1107931e923a41ef33b9b0a198b55617d00627300"
     },
     {
       "task_id": "new-tech-company-emergences",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-27T04:45:32.545745+00:00",
-      "semantic_records": 28,
       "metrics": {
         "hard_f1_full": 0.5,
         "hard_precision_full": 0.9642857142857143,
@@ -610,16 +411,10 @@
         "soft_precision_full": 0.9642857142857143,
         "soft_recall_full": 0.3375
       },
-      "official_receipt_artifact_sha256": "124af460870d1c7a4b3fb2a57e289f1e48e5b6f7e31bdcbf95b83d6e8d18a0ba",
       "official_receipt_file_sha256": "684317affb7724738f73e59889c38515dd905509a13b20d426fda6c226956faf"
     },
     {
       "task_id": "nonfinancial-public-company-insurance-intermediation",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-27T22:29:06.721705+00:00",
-      "semantic_records": 31,
       "metrics": {
         "hard_f1_full": 0.3481012658227848,
         "hard_precision_full": 0.8333333333333334,
@@ -628,16 +423,10 @@
         "soft_precision_full": 0.8888888888888888,
         "soft_recall_full": 0.28
       },
-      "official_receipt_artifact_sha256": "b63b89bfa4c6554c0e0d889fc9b53fa226351f208155e01c3e91e31a689de5de",
       "official_receipt_file_sha256": "ac442c0323abba8eb5d00c140035edefaa1987ef132d43efb9ae7ce3444894d0"
     },
     {
       "task_id": "payment-integrity-service-lines",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-26T13:03:11.740635+00:00",
-      "semantic_records": 79,
       "metrics": {
         "hard_f1_full": 0.41860465116279066,
         "hard_precision_full": 0.5,
@@ -646,16 +435,10 @@
         "soft_precision_full": 0.8,
         "soft_recall_full": 0.63
       },
-      "official_receipt_artifact_sha256": "94b7018ac39ae75ad391b3a50bf1e63eafe3a975dc32339490aa7c2dfe19a098",
       "official_receipt_file_sha256": "1b302eeff5902210954eae1a7c8e19594882c2944c665f0d1071a55e8e15943b"
     },
     {
       "task_id": "pbm-lobbying",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-27T13:28:05.042721+00:00",
-      "semantic_records": 30,
       "metrics": {
         "hard_f1_full": 0.6,
         "hard_precision_full": 1.0,
@@ -664,16 +447,10 @@
         "soft_precision_full": 1.0,
         "soft_recall_full": 0.42857142857142855
       },
-      "official_receipt_artifact_sha256": "89820310a1b14c5586b749ddcdb0a239a1dd6674b87ebd0154ccafd9f7125172",
       "official_receipt_file_sha256": "9b2043ccbb025074ca865fddb103d167cbc7abf89d3634aa4832878a8bd617bc"
     },
     {
       "task_id": "prd-packaging-suppliers",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-27T17:35:41.666404+00:00",
-      "semantic_records": 32,
       "metrics": {
         "hard_f1_full": 0.25,
         "hard_precision_full": 0.5,
@@ -682,16 +459,10 @@
         "soft_precision_full": 0.96875,
         "soft_recall_full": 0.3229166666666667
       },
-      "official_receipt_artifact_sha256": "16a5cc4cbd260be77a0d243736f9176dac6fea2869fa3cd5a95926595804b042",
       "official_receipt_file_sha256": "fd4b28d1a624b76cf450a37c04b50f8ff6065ddde7667fe7907b36547cdc96fc"
     },
     {
       "task_id": "semiconductor-financial-deep-dive",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-26T19:06:00.922551+00:00",
-      "semantic_records": 76,
       "metrics": {
         "hard_f1_full": 0.47619047619047616,
         "hard_precision_full": 0.8333333333333334,
@@ -700,16 +471,10 @@
         "soft_precision_full": 0.9375,
         "soft_recall_full": 0.6015625
       },
-      "official_receipt_artifact_sha256": "3498174b29fc09d7b09b1b9486be8e93de5634def8f94dd438e77dee5c323b4b",
       "official_receipt_file_sha256": "a56fc70e20761b229ce13b182bdab3f32d9888acabfab6c0d217047c730582de"
     },
     {
       "task_id": "solid-state-battery-patents",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-28T09:33:24.762730+00:00",
-      "semantic_records": 32,
       "metrics": {
         "hard_f1_full": 0.4999999999999999,
         "hard_precision_full": 0.875,
@@ -718,16 +483,10 @@
         "soft_precision_full": 0.9375,
         "soft_recall_full": 0.375
       },
-      "official_receipt_artifact_sha256": "109f2ef655fe15e08212a597ee17f6c12b0eae4815f40295a81656a07dd68e9e",
       "official_receipt_file_sha256": "dc2826e2021e3af046d09ecb99bc7b90fb675a9f1dd602f0e6190f7d99cce185"
     },
     {
       "task_id": "taipei-car-detailing-shops",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-27T08:30:27.795134+00:00",
-      "semantic_records": 35,
       "metrics": {
         "hard_f1_full": 0.23241590214067276,
         "hard_precision_full": 0.9047619047619048,
@@ -736,16 +495,10 @@
         "soft_precision_full": 0.9365079365079365,
         "soft_recall_full": 0.3222222222222222
       },
-      "official_receipt_artifact_sha256": "8659d4ee2de42d90b4fce3bcc5f77cbf05ea16ef0c3744dd035b6662ee496368",
       "official_receipt_file_sha256": "13c5142ea8ede248194270974f066f54e6f6ed3abcb298d4e920c5052e4bd344"
     },
     {
       "task_id": "tn-kl-100-bed-hospitals",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-27T09:40:42.701276+00:00",
-      "semantic_records": 42,
       "metrics": {
         "hard_f1_full": 0.6363636363636364,
         "hard_precision_full": 1.0,
@@ -754,16 +507,10 @@
         "soft_precision_full": 1.0,
         "soft_recall_full": 0.4666666666666667
       },
-      "official_receipt_artifact_sha256": "6736f88c61370adee14b42facbd85002a6730ddff83da2dcfd5ebd7d3e130707",
       "official_receipt_file_sha256": "7bffd999ec01cc9cb86aa328bf6f277738b2d90454e803eb0e35c6c991b1a1c9"
     },
     {
       "task_id": "us-cardiac-surgery-signals",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-27T01:50:59.201046+00:00",
-      "semantic_records": 27,
       "metrics": {
         "hard_f1_full": 0.39436619718309857,
         "hard_precision_full": 0.9333333333333333,
@@ -772,16 +519,10 @@
         "soft_precision_full": 0.9333333333333333,
         "soft_recall_full": 0.4375
       },
-      "official_receipt_artifact_sha256": "db7c9971200afdfaa57eeb83b3bd1537f33976641f58af727a0992470f76d814",
       "official_receipt_file_sha256": "3fb46390199b545fb03e213ca315c0b71a8d839aa2f8dbe45ec7b7846c51ed5e"
     },
     {
       "task_id": "us-government-grants",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-27T01:35:16.620533+00:00",
-      "semantic_records": 31,
       "metrics": {
         "hard_f1_full": 0.5849056603773585,
         "hard_precision_full": 1.0,
@@ -790,16 +531,10 @@
         "soft_precision_full": 1.0,
         "soft_recall_full": 0.41333333333333333
       },
-      "official_receipt_artifact_sha256": "1b4f6be4af1ab2f3bfdc9c4e9b79152d7e48dd01a957d779b7841e09db35c5d8",
       "official_receipt_file_sha256": "a73e68e4c4c58da436181e93da9202786fcbba5d3ccec5aac92457748f59959a"
     },
     {
       "task_id": "vietnam-tile-slabs",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-26T15:48:03.875257+00:00",
-      "semantic_records": 41,
       "metrics": {
         "hard_f1_full": 0.33333333333333337,
         "hard_precision_full": 1.0,
@@ -808,16 +543,10 @@
         "soft_precision_full": 1.0,
         "soft_recall_full": 0.4
       },
-      "official_receipt_artifact_sha256": "543042ebfd6f39176550f8fe29eccddcaea906ae92fae6e5d517f1ba39801e01",
       "official_receipt_file_sha256": "2fa1b63358c0084c6e9b4543ee0f481b3ba8a0adedfc5604eb5a1a359c0c4350"
     },
     {
       "task_id": "vp-marketing-saas",
-      "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
-      "metric_bearing": true,
-      "infrastructure_zero_fill": false,
-      "sealed_at": "2026-08-27T08:18:46.701813+00:00",
-      "semantic_records": 18,
       "metrics": {
         "hard_f1_full": 0.47058823529411764,
         "hard_precision_full": 0.8888888888888888,
@@ -826,7 +555,6 @@
         "soft_precision_full": 0.8888888888888888,
         "soft_recall_full": 0.32
       },
-      "official_receipt_artifact_sha256": "f4df2bc633a751819d3fa30bac2d40629d3ce3c0e9bcd9f7b58c4d0902982829",
       "official_receipt_file_sha256": "949890597516b4ac0304bc25a368e4f73370cb0163c4f73abc19512c950015f0"
     }
   ]

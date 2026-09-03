@@ -33,7 +33,7 @@
   },
   "public_task_results": {
     "path": "task-results.json",
-    "sha256": "b2f6396cd051d96eece7ea12c922fce457a6c5091a24372e133fd0a938d969c9"
+    "sha256": "098cf6b7131044bea890407148ad0c17bc1656939b62941e064d982067d25643"
   },
   "claim_boundary": "Comparison on the matched 45-task WANDR Table 6 surface. Not a result on the full 500-task benchmark."
 }

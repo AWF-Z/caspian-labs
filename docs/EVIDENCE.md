@@ -41,18 +41,11 @@ than unsupported volume.
 Comparator values are from [WANDR Table 6](https://arxiv.org/html/2608.14747v1#S5.T6).
 CASP values can be recomputed from the
 [45-task manifest](../evidence/wandr-s45/task-results.json), which publishes
-every task-level metric, score timestamp, and official-receipt hash. The sealed
-aggregate and package hashes are recorded in
+every task-level metric and a SHA-256 binding to its official receipt. The
+sealed aggregate and package hashes are recorded in
 [`result.json`](../evidence/wandr-s45/result.json).
 
-Three sanitized official-score receipt extracts show the public receipt schema
-without publishing task outputs:
-
-- [`ai-funding-announcements`](../evidence/wandr-s45/receipt-examples/ai-funding-announcements.json)
-- [`solid-state-battery-patents`](../evidence/wandr-s45/receipt-examples/solid-state-battery-patents.json)
-- [`us-cardiac-surgery-signals`](../evidence/wandr-s45/receipt-examples/us-cardiac-surgery-signals.json)
-
-Run `python3 scripts/check_public_repo.py` to verify the receipt bindings and
+Run `python3 scripts/check_public_repo.py` to validate the manifest and
 recompute all six published aggregate metrics from the 45 task rows.
 
 ### Boundary
