@@ -31,6 +31,9 @@
     "package_seal_sha256": "fae5949579b87fa18c39fd8e854e6d7e03b8853e64f35f5978a9024461ada62a",
     "preserved_task_registry_sha256": "d9741319d276fea2c6c6605a90a5ffcbdd4dd5f8e6099634eab9170b474af56c"
   },
-  "claim_boundary": "Matched 45-task official-evaluator comparison against published WANDR Table 6 production-system values. Not a full-500 leaderboard result, universal superiority claim, independent replication, or endorsement."
+  "public_task_results": {
+    "path": "task-results.json",
+    "sha256": "b2f6396cd051d96eece7ea12c922fce457a6c5091a24372e133fd0a938d969c9"
+  },
+  "claim_boundary": "Comparison on the matched 45-task WANDR Table 6 surface. Not a result on the full 500-task benchmark."
 }
-

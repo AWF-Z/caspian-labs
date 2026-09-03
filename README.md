@@ -53,10 +53,15 @@ official scores on all 45 matched tasks, with no infrastructure zero-fills, and
 reached **0.917 aggregate soft precision**.
 
 The published comparator values come from [WANDR Table 6](https://arxiv.org/html/2608.14747v1#S5.T6).
-CASP's aggregate metrics and preservation hashes are available in the
-[public evidence record](evidence/wandr-s45/result.json). The claim is limited
-to the identical matched 45-task surface. It is not a full-500 leaderboard claim
-or an endorsement by the benchmark authors or compared companies.
+CASP's aggregate metrics and sealed-package hashes are available in the
+[public evidence record](evidence/wandr-s45/result.json). All 45 task-level
+scores and official-receipt hashes are published in the
+[task manifest](evidence/wandr-s45/task-results.json), and the
+[public validator](scripts/check_public_repo.py) recomputes the aggregate from
+those rows.
+
+The comparison uses the same 45-task subset reported in WANDR Table 6. It is
+not a result on the full 500-task benchmark.
 
 ## One research engine, three configurations
 
@@ -105,13 +110,9 @@ tested, and prioritized.
 
 ## Public repository boundary
 
-This repository is Caspian Labs' public company, product, and evidence surface.
-It contains sanitized result summaries, high-level product documentation, and a
-release audit.
-
-It does **not** contain CASP's proprietary runtime, task compilers, search and
-ranking implementation, evaluator reconstruction, repair system, private
-receipts, datasets, customer material, or internal research infrastructure.
+This repository contains public product documentation and a sanitized benchmark
+record. Full task-level official evaluator receipts and supporting artifacts are
+available for confidential diligence.
 
 The public validation script is licensed under the
 [MIT License](scripts/LICENSE). The repository's documentation, evidence

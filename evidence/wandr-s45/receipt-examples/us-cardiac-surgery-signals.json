@@ -1,0 +1,24 @@
+{
+  "schema": "caspian-labs.public-wandr-receipt-extract.v1",
+  "artifact_type": "OfficialScoreReceiptExtract",
+  "task_id": "us-cardiac-surgery-signals",
+  "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
+  "metric_bearing": true,
+  "infrastructure_zero_fill": false,
+  "metrics": {
+    "hard_f1_full": 0.39436619718309857,
+    "hard_precision_full": 0.9333333333333333,
+    "hard_recall_full": 0.25,
+    "soft_f1_full": 0.5957446808510638,
+    "soft_precision_full": 0.9333333333333333,
+    "soft_recall_full": 0.4375
+  },
+  "semantic_records": 27,
+  "sealed_at": "2026-08-27T01:50:59.201046+00:00",
+  "evaluator_attempt_receipt_sha256": "bcf19972cc52b6433a66738b2ef8991a6e651e32c26303000f21099419dec1b2",
+  "official_terminal_sha256": "1267d65ec120607be72af345cae396f2f40674e64a76adcd430dcbeed3cf31a8",
+  "participant_terminal_sha256": "2bcc4f03e6f52e20461bb29c7344f239d72a7ca7a5e806e52f4dc5f24b95d30e",
+  "source_receipt_artifact_sha256": "db7c9971200afdfaa57eeb83b3bd1537f33976641f58af727a0992470f76d814",
+  "source_receipt_file_sha256": "3fb46390199b545fb03e213ca315c0b71a8d839aa2f8dbe45ec7b7846c51ed5e",
+  "public_copy": true
+}

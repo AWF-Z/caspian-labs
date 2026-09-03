@@ -39,16 +39,26 @@ than unsupported volume.
 | Gemini Deep Research | max | 0.074 | 0.028 |
 
 Comparator values are from [WANDR Table 6](https://arxiv.org/html/2608.14747v1#S5.T6).
-CASP values come from the sealed official-evaluator aggregate whose public hash
-is recorded in [`result.json`](../evidence/wandr-s45/result.json).
+CASP values can be recomputed from the
+[45-task manifest](../evidence/wandr-s45/task-results.json), which publishes
+every task-level metric, score timestamp, and official-receipt hash. The sealed
+aggregate and package hashes are recorded in
+[`result.json`](../evidence/wandr-s45/result.json).
+
+Three sanitized official-score receipt extracts show the public receipt schema
+without publishing task outputs:
+
+- [`ai-funding-announcements`](../evidence/wandr-s45/receipt-examples/ai-funding-announcements.json)
+- [`solid-state-battery-patents`](../evidence/wandr-s45/receipt-examples/solid-state-battery-patents.json)
+- [`us-cardiac-surgery-signals`](../evidence/wandr-s45/receipt-examples/us-cardiac-surgery-signals.json)
+
+Run `python3 scripts/check_public_repo.py` to verify the receipt bindings and
+recompute all six published aggregate metrics from the 45 task rows.
 
 ### Boundary
 
-The claim is limited to the identical matched 45-task surface and official
-evaluator. The sealed aggregate combines preserved genuine official task
-receipts. It is not a full-500 leaderboard claim, a claim about every unseen
-research task, or an endorsement by Perplexity, WANDR's authors, or any compared
-company.
+The comparison uses the same 45-task subset reported in WANDR Table 6 and the
+official evaluator. It is not a result on the full 500-task benchmark.
 
 ## Historical clinical opportunity result
 
@@ -70,9 +80,7 @@ pass.
 The public summary is in
 [`evidence/clinical-opportunity/result.json`](../evidence/clinical-opportunity/result.json).
 
-## What remains private
+## Additional diligence
 
-The result-bearing engine, task compilers, evaluator reconstruction, repair
-logic, full receipts, candidate outputs, ranking artifacts, private labels,
-datasets, and internal infrastructure are not public. Qualified diligence can
-inspect additional evidence under an appropriate confidential process.
+Full task-level official evaluator receipts and supporting artifacts are
+available for confidential diligence.

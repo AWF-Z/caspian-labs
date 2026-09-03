@@ -1,0 +1,24 @@
+{
+  "schema": "caspian-labs.public-wandr-receipt-extract.v1",
+  "artifact_type": "OfficialScoreReceiptExtract",
+  "task_id": "solid-state-battery-patents",
+  "status": "GENUINE_METRIC_BEARING_OFFICIAL_SCORE",
+  "metric_bearing": true,
+  "infrastructure_zero_fill": false,
+  "metrics": {
+    "hard_f1_full": 0.4999999999999999,
+    "hard_precision_full": 0.875,
+    "hard_recall_full": 0.35,
+    "soft_f1_full": 0.5357142857142857,
+    "soft_precision_full": 0.9375,
+    "soft_recall_full": 0.375
+  },
+  "semantic_records": 32,
+  "sealed_at": "2026-08-28T09:33:24.762730+00:00",
+  "evaluator_attempt_receipt_sha256": "9314ffcc12e1d03a2ef807b7b44c0682894eb60311baa20bd63a1b412ad3c7e7",
+  "official_terminal_sha256": "debd4d9003d822d81d1884375c57edc7f49dbce3a049a10beeb6157aebfb4c7a",
+  "participant_terminal_sha256": "435d8c2c6b5ed558ae0bf6581e3cf704acaccb3d0a158364d680beb83233f3c0",
+  "source_receipt_artifact_sha256": "109f2ef655fe15e08212a597ee17f6c12b0eae4815f40295a81656a07dd68e9e",
+  "source_receipt_file_sha256": "dc2826e2021e3af046d09ecb99bc7b90fb675a9f1dd602f0e6190f7d99cce185",
+  "public_copy": true
+}
